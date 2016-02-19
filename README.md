@@ -25,9 +25,11 @@ In your project's Gruntfile, add a section named `vegas_assets_prepare` to the d
 ```js
 grunt.initConfig({
   vegas_assets_prepare: {
-    your_target: {
-      // Target-specific file lists and/or options go here.
-    },
+    namespace: {
+      your_target: {
+        // Target-specific file lists and/or options go here.
+      }
+    }
   },
 });
 ```
@@ -37,9 +39,11 @@ grunt.initConfig({
 ```js
 grunt.initConfig({
   vegas_assets_prepare: {
-    files: {
-      'public/assets/bower.json': ['public/assets/bower_base.json', 'vendor/vegas-cmf/common/vegas.json', 'vendor/vegas-cmf/odm/vegas.json'],
-    },
+    default: {
+      files: {
+        'public/assets/bower.json': ['public/assets/bower_base.json', 'vendor/vegas-cmf/common/vegas.json', 'vendor/vegas-cmf/odm/vegas.json'],
+      }
+    }
   },
 });
 ```
