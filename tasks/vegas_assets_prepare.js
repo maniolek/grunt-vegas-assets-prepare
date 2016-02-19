@@ -25,7 +25,6 @@ module.exports = function (grunt) {
                         throw "JSON source file \"" + chalk.red(src) + "\" not found.";
                     }
 
-
                     grunt.log.debug("reading JSON source file \"" + chalk.green(src) + "\"");
 
                     var fragment = grunt.file.readJSON(src);

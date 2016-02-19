@@ -31,7 +31,6 @@ module.exports = function(grunt) {
     // Configuration to be run (and then tested).
     vegas_assets_prepare: {
       default: {
-        options: {},
         files: {
           'tmp/default.json': ['test/fixtures/test1.json', 'test/fixtures/test2.json']
         }
