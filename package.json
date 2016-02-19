@@ -40,6 +40,6 @@
     "lodash": "~2.4.1"
   },
   "keywords": [
-    "gruntplugin"
+    "grunt vegas assets prepare"
   ]
 }
