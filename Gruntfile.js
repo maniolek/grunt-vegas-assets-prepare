@@ -35,12 +35,6 @@ module.exports = function(grunt) {
         files: {
           'tmp/default.json': ['test/fixtures/test1.json', 'test/fixtures/test2.json']
         }
-      },
-      invalidJsonFile: {
-        options: {},
-        files: {
-          'tmp/invalid_json_file.json': 'test/fixtures/*'
-        }
       }
     },
 
