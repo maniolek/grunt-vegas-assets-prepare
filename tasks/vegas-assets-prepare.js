@@ -13,10 +13,12 @@ module.exports = function (grunt) {
     var chalk = require("chalk");
     var _ = require("lodash");
 
-    grunt.registerMultiTask('vegas_assets_prepare', 'Vegas CMF assets management', function () {
+    grunt.registerMultiTask('vegas-assets-prepare', 'Vegas CMF assets management', function () {
 
         this.files.forEach(function (f) {
             try {
+
+                grunt.log.debug(f.src + ' ' + f.dest);
 
                 var json = {};
                 f.src.forEach(function (src) {

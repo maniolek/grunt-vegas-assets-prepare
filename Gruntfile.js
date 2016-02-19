@@ -29,7 +29,7 @@ module.exports = function(grunt) {
     },
 
     // Configuration to be run (and then tested).
-    vegas_assets_prepare: {
+    "vegas-assets-prepare": {
       default: {
         files: {
           'tmp/default.json': ['test/fixtures/test1.json', 'test/fixtures/test2.json']
@@ -50,7 +50,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-nodeunit');
 
-  grunt.registerTask('test', ['clean', 'vegas_assets_prepare', 'nodeunit']);
+  grunt.registerTask('test', ['clean', 'vegas-assets-prepare', 'nodeunit']);
 
   grunt.registerTask('default', ['jshint', 'test']);
 
