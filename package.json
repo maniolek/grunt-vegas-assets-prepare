@@ -1,7 +1,7 @@
 {
   "name": "grunt-vegas-assets-prepare",
   "description": "VegasCMF assets management",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "homepage": "https://github.com/maniolek/grunt-vegas-assets-prepare",
   "author": {
     "name": "Mateusz Aniolek",
